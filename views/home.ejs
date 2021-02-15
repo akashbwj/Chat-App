@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+    <section class="join">
+            <div id="joinbox">
+              <div class="join-header">
+                <h1>
+                    <i class="fas fa-smile" aria-hidden="true"></i> Chat App
+                </h1>
+              </div>
+              <div class="join-form">
+                <form action="/chat" method="GET">
+                    <div class="join-input">
+                      <label for="username">Username</label>
+                      <input required id="username" name="username" type="text" placeholder="Enter username">
+                    </div>
+                    <div class="join-room">
+                      <label for="room">Room</label>
+                          <select name="room" id="room">
+                              <option value="JavaScript">JavaScript</option>
+                              <option value="Python">Python</option>
+                              <option value="PHP">PHP</option>
+                              <option value="C#">C#</option>
+                              <option value="Ruby">Ruby</option>
+                              <option value="Java">Java</option>
+                          </select>
+                    </div>
+                  <div>
+                    <button type="submit" class="group relative w-full flex justify-center py-2 mt-11 px-4 border border-transparent text-sm font-medium focus:outline-none ">
+                      Join Chat
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+    </section>
+</body>
+</html>
